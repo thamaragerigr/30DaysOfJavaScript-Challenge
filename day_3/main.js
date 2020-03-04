@@ -154,3 +154,18 @@ function compareAge(mine, yours) {
 compareAge(myAge, yourAge);
 
 //Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years. 
+let yearBorn = Number(prompt('Enter birth year:'));
+let currentYear = now.getFullYear() // 2020
+let currentAge = currentYear - yearBorn;
+console.log(currentAge);
+
+//Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
+let yearsLived = Number(prompt('Enter number of yours you live:'));
+let secondsInAYear = 31556952;
+let secondsLived = secondsInAYear * yearsLived;
+console.log(secondsLived);
+
+//Create a human readable time format using the Date time object
+
+//Create a human readable time format using the Date time object
+
