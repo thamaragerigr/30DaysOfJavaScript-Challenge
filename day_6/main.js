@@ -65,9 +65,6 @@ const countries = [
 //  }
 
 // Write a loop that makes the following pattern using console.log():
-
-
-
 for (let i = 1; i < 7; i++) {
   let strng = ' ';
   for (let j = 1; j <= i; j++) {
@@ -77,16 +74,47 @@ for (let i = 1; i < 7; i++) {
 }
 
 //Use loop to print the following pattern:
+for (let i = 0; i <= 10; i++) {
+  console.log(`${i} x ${i} = ${i*i}`);
+}
 
 //Using loop print the following pattern
+for (let i = 0; i <= 10; i++) {
+  console.log(`${i}  ${i**2}  ${i**3}`);
+}
 
 //Use for loop to iterate from 0 to 100 and print only even numbers
+// for (let i = 0; i <= 100; i++) {
+//   if (i % 2 == 0) {
+//     console.log(i);
+//   }
+// }
 
 //Use for loop to iterate from 0 to 100 and print only odd numbers
+// for (let i = 0; i <= 100; i++) {
+//   if (i % 2 !== 0) {
+//     console.log(i);
+//   }
+// }
 
 //Use for loop to iterate from 0 to 100 and print only prime numbers
+// for (let i = 2; i <= 100; i++) {
+//   for(let factor = 2; factor < i; factor++) {
+//     if(i % factor == 0) {
+//        isPrime = false;
+//        break;
+//     }
+//  }
+
+//  if(isPrime) {
+//     console.log(i);
+//  }
+// }
 
 // Use for loop to iterate from 0 to 100 and print and print the sum of all numbers.
+for (let i = 0; i <= 100; i++) {
+  console.log(`The sum all numbers is ${i**3}`);
+}
 
 //Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
 
