@@ -111,18 +111,30 @@ for (let i = 0; i <= 10; i++) {
 //  }
 // }
 
-// Use for loop to iterate from 0 to 100 and print and print the sum of all numbers.
-for (let i = 0; i <= 100; i++) {
-  console.log(`The sum all numbers is ${i**3}`);
+///////////// Use for loop to iterate from 0 to 100 and print and print the sum of all numbers.
+
+function sumNums(){
+  let sum = 0;
+  for (let i = 0; i <= arguments.length; i++) {
+    sum += arguments[i];
+  }
+  console.log(sum);
 }
 
-//Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+sumNums()
+////////////Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
 
-//Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
+/////////////Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
 
 //Develop a small script which generate array of 5 random numbers
-
 //Develop a small script which generate array of 5 random numbers and the numbers must be unique
 
-//Develop a small script which generate a six characters random id:
+let randomNums = [] ;
+for (let i = 0; i < 5; i++) { 
+  randomNums[i] = Math.floor(Math.random() * 5);
+};
+console.log(randomNums);
+
+
+////////Develop a small script which generate a six characters random id:
 
