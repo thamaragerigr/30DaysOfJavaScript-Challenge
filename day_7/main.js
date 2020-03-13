@@ -83,17 +83,17 @@ console.log(convertCelciusToFahrenheit);
 //Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. Write a function which calculates bmi. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is underweight, normal, overweight or obese based the information given below.
 const BMIS = (weight, height) => {
     BMI = weight / (height * height);
-    switch (BMI) {
-        case (BMI >= 18.5 && BMI <= 24.9): 
+    switch (true) {
+        case BMI >= 18.5 && BMI <= 24.9: 
             console.log('Normal weight');
             break;
-        case (BMI < 18.5):
+        case BMI < 18.5:
             console.log('Underweight'); 
             break;
-        case (BMI >= 25 && BMI <= 29.9):
+        case BMI >= 25 && BMI <= 29.9:
             console.log('Overweight'); 
             break;
-        case (BMI >= 30):
+        case BMI >= 30:
             console.log('Obese'); 
             break;
         default:
@@ -102,4 +102,57 @@ const BMIS = (weight, height) => {
     }
 };
 
-console.log(BMIS(0,1.45));
+console.log(BMIS(50,1.45));
+
+//Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
+
+const checkSeason = month => {
+ switch (month) {
+    case 'september' :
+    case  'october' :
+    case  'november':
+        console.log('Autumn');
+        break;
+    case 'december':
+    case 'january':
+    case 'february':
+        console.log('Winter');
+        break;
+    case 'march':
+    case 'april':
+    case 'may':
+        console.log('Spring');
+        break;  
+    case 'june':
+    case 'july': 
+    case 'august':
+        console.log('Summer');
+        break;
+    default:
+        console.log("You haven't done the test!");
+        break;
+};
+};
+
+checkSeason('april');
+
+//Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
+const findMax = (a,b,c) => {
+  switch (true) {
+    case a >  b: 
+        console.log(a);
+        break;
+    case a < b:
+        console.log(b); 
+        break;
+    case b > c:
+        console.log('Overweight'); 
+        break;
+    case BMI >= 30:
+        console.log('Obese'); 
+        break;
+    default:
+        console.log('Normal weight');
+        break;
+}
+};
